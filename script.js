@@ -62,8 +62,8 @@ function renderList() {
             var textToCopy = listItem.innerHTML.replace('<button class="copy-btn">複製</button>', '').trim(); // 或者使用 listItem.textContent 如果只想獲取文本
             // 將 &nbsp; 替換為空格，將 <br> 替換為換行符
             textToCopy = textToCopy
-                .replace(/&nbsp;/g, ' ') // 使用正則表達式替換 &nbsp;
-                .replace(/<br\s*\/?>/g, '\n'); // 替換 <br> 標籤為換行符
+                .replace('&nbsp;', ' ') // 使用正則表達式替換 &nbsp;
+                .replace('<br>', '\n'); // 替換 <br> 標籤為換行符
 
 
             navigator.clipboard.writeText(textToCopy)
