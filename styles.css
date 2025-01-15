@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #e1baf3;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1 {
+    color: #333;
+}
+
+.fish-list {
+    margin-top: 1rem;
+}
+
+.fish-list li {
+    position: relative; /* 設置為相對定位，使內部的絕對定位按鈕以這個元素為參考 */
+    padding: 1rem; /* 為了顯示效果而添加的填充 */
+    margin-bottom: 1rem; /* 在列表項之間添加一點間距 */
+    border: 1px solid #ccc; /* 為了視覺區分添加邊框 */
+    background-color: #f9f9f9; /* 淡背景色 */
+}
+
+.form-container-title {
+    margin-top: 2rem;
+}
+
+.form-container-title input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.form-container {
+    display: flex; /* 使用 Flexbox */
+    flex-wrap: wrap; /* 允許內容換行 */
+    gap: 0.5rem; /* 控制欄位之間的間距 */
+    margin-top: 2rem;
+}
+
+.form-container input {
+    padding: 0.5rem;
+    width: calc(33.33% - 0.5rem); /* 確保每行最多三個欄位，可以根據需求調整 */
+    box-sizing: border-box;
+}
+
+.form-container-list {
+    display: flex; /* 使用 Flexbox */
+    flex-wrap: wrap; /* 允許內容換行 */
+    gap: 0.5rem; /* 控制欄位之間的間距 */
+    margin-top: 2rem;
+}
+
+.form-container-list ul {
+    padding: 0.5rem;
+    width: calc(33.33% - 0.5rem); /* 確保每行最多三個欄位，可以根據需求調整 */
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .form-container input {
+        width: calc(50% - 0.5rem); /* 在較小螢幕上每行最多兩個欄位 */
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container input {
+        width: 100%; /* 在最小螢幕上每行一個欄位 */
+    }
+}
+
+.form-container button {
+    background: #007bff;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.form-container button:hover {
+    background: #0056b3;
+}
+
+ul {
+    list-style-type: none; /* 去掉預設的列表項符號 */
+    padding: 0;
+    display: flex; /* 使用 Flexbox 佈局 */
+    flex-wrap: wrap; /* 允許項目換行 */
+    gap: 1rem; /* 添加項目之間的間距 */
+}
+
+li {
+    position: relative; /* 設置為相對定位，使內部的絕對定位按鈕以這個元素為參考 */
+    padding: 1rem; /* 為了顯示效果而添加的填充 */
+    /*margin-bottom: 1rem;  在列表項之間添加一點間距 */
+    border: 1px solid #ccc; /* 為了視覺區分添加邊框 */
+    background-color: #eaeaea; /* 每個列表項的背景色 */
+    border-radius: 5px; /* 圓角 */
+}
+
+.copy-btn {
+    position: absolute; /* 絕對定位以便放置到列表項的右下角 */
+    bottom: 5px; /* 距離底部邊緣5像素 */
+    right: 5px; /* 距離右側邊緣5像素 */
+    background-color: #4CAF50; /* 按鈕背景色 */
+    color: white; /* 按鈕文字顏色 */
+    border: none; /* 去掉按鈕邊框 */
+    padding: 5px 10px; /* 按鈕内邊距 */
+    cursor: pointer; /* 提示點擊性 */
+    border-radius: 5px; /* 圓角設計 */
+}

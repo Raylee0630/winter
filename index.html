@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMF程式碼產生器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>EMF程式碼產生器</h1>
+    </header>
+    <main>
+        <section>
+            <h2>EMF程式列表</h2>
+        </section>
+        <section class="form-container">
+            <ul id="List">
+                <!-- User items will be dynamically added here -->
+            </ul>
+        </section>
+        <section>
+            <h2>產生程式碼</h2>
+        </section>
+        <section class="form-container">
+            <input type="text" id="ID" placeholder="ID(英文數字)" required>
+            <input type="text" id="Display" placeholder="顯示名稱" required>
+            <input type="text" id="Material" placeholder="原版物品(英文，可上百科查)" required>
+            <input type="text" id="Custom" placeholder="建模編號" required>
+            <input type="text" id="Head64" placeholder="頭顱值" required>
+            <input type="text" id="Biome" placeholder="生態域" required>
+            <input type="text" id="minSize" placeholder="最小長度" required>
+            <input type="text" id="maxSize" placeholder="最大長度" required>
+            <input type="text" id="Lore" placeholder="敘述" required>
+            <button id="addButton">新增</button>
+        </section>
+        <div id="message"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
